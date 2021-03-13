@@ -237,28 +237,32 @@ $(document).ready(function () {
     $(".openNav").click(function(){
         $(".overlay").css({
             top : "0",
-            transition: "0.5s"
+            transition: "0.5s",
+            opacity: "1"
         });
     });
     
     $(".closeNav").click(function(){
         $(".overlay").css({
             top: "-100%",
-            transition: "0.5s"
+            transition: "0.5s",
+            opacity: "0"
         });
     });
     
     $(".overlay_content a").click(function(){
         $(".overlay").css({
             top: "-100%",
-            transition: "0.3s"
+            transition: "0.3s",
+            opacity: "0"
         });
     });
     
     $(".overlay_top a img").click(function(){
         $(".overlay").css({
             top: "-100%",
-            transition: "0.3s"
+            transition: "0.3s",
+            opacity: "0"
         });
     });
 
